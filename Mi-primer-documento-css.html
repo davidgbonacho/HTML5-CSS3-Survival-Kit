@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi bautismo CSS</title>
+    <style>
+        @import url(https://fonts.googleapis.com/css?family=Oswald:300);
+        @import url(https://fonts.googleapis.com/css?family=Lato:300);
+
+        * {
+            scroll-behavior: smooth;
+            overflow-x: hidden;
+    
+        }
+
+
+        body {
+            margin: 0;
+            font-family: 'Lato';
+        }
+
+        nav,
+        h1,
+        h2,
+        h3 {
+            font-family: 'Oswald';
+            font-weight: bold;
+        }
+
+
+        /*tabla*/
+        td {
+            text-align: center;
+        }
+
+        tr:hover {
+            background-color: aqua;
+        }
+
+        td:hover {
+            background-color: aquamarine;
+            cursor: pointer;
+        }
+
+
+        /* imagen superior*/
+
+        #imagetop {
+            background-image: url(https://cdn.pixabay.com/photo/2018/08/24/23/33/field-3629120_1280.jpg);
+            background-size: cover;
+            width: 100%;
+            height: 200px;
+        }
+
+        #logo {
+            padding: 20px;
+        }
+
+        .container {
+            width: 1000px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        /*menu*/
+
+        nav {
+            position: absolute;
+            top: 10px;
+            right: 20px;
+
+        }
+
+        nav a {
+            text-decoration: none;
+            color: black;
+        }
+
+        nav a:hover {
+            color: grey;
+        }
+
+        nav ul li {
+            display: inline;
+            padding-left: 5px;
+            padding-right: 5px;
+        }
+
+
+
+        p {
+            text-align: justify;
+        }
+
+        /* lista */
+        ol li:nth-child(odd) {
+            background-color: rgb(193, 193, 193);
+        }
+
+        ol li {
+            padding: 10px;
+        }
+
+        /* pie */
+
+        footer {
+            height: 200px;
+            background-color: black;
+            color: white;
+        }
+
+        footer .container {
+            padding-top: 20px;
+        }
+
+        address {
+            margin-left: 38px;
+            font-size: 12px;
+        }
+
+        #botonsubir {
+            position: fixed;
+            bottom: 10px;
+            right: 10px;
+        }
+
+        @media only screen and (max-width: 767px) {
+            .container {
+                width: 93%;
+                margin-left:1em;
+                margin-right:1em;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+
+        <div id="logo"><img src="https://www.nationalgeographic.com.es/Content/img/logo-ng18-big.svg" alt=""></div>
+        <div id="imagetop"></div>
+        <div class="container">
+            <h1>Mi bautismo CSS: Maquetando HTML5 con CSS3</h1>
+        </div>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#quijote">El Quijote de la mancha</a></li>
+            <li><a href="#tabla">Datos</a></li>
+            <li><a href="#tao">Tao Te Ching</a></li>
+            <li><a href="#lista">Lista</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <div class="container">
+            <section id="quijote">
+                <h2>Comienzo de El Quijote de la mancha</h2>
+                <p>En un lugar de la Mancha, de cuyo nombre no quiero acordarme, no ha mucho tiempo que vivía un hidalgo
+                    de los de lanza en astillero, adarga antigua, rocín flaco y galgo corredor. Una olla de algo más
+                    vaca que carnero, salpicón las más noches, duelos y quebrantos los sábados, lantejas los viernes,
+                    algún palomino de añadidura los domingos, consumían las tres partes de su hacienda. El resto della
+                    concluían sayo de velarte, calzas de velludo para las fiestas, con sus pantuflos de lo mesmo, y los
+                    días de entresemana se honraba con su vellorí de lo más fino. Tenía en su casa una ama que pasaba de
+                    los cuarenta, y una sobrina que no llegaba a los veinte, y un mozo de campo y plaza, que así
+                    ensillaba el rocín como tomaba la podadera. Frisaba la edad de nuestro hidalgo con los cincuenta
+                    años; era de complexión recia, seco de carnes, enjuto de rostro, gran madrugador y amigo de la caza.
+                    Quieren decir que tenía el sobrenombre de Quijada, o Quesada, que en esto hay alguna diferencia en
+                    los autores que deste caso escriben; aunque por conjeturas verosímiles se deja entender que se
+                    llamaba Quijana. Pero esto importa poco a nuestro cuento: basta que en la narración dél no se salga
+                    un punto de la verdad.</p>
+                <p>Es, pues, de saber que este sobredicho hidalgo, los ratos que estaba ocioso, que eran los más del
+                    año, se daba a leer libros de caballerías, con tanta afición y gusto, que olvidó casi de todo punto
+                    el ejercicio de la caza, y aun la administración de su hacienda; y llegó a tanto su curiosidad y
+                    desatino en esto, que vendió muchas hanegas de tierra de sembradura para comprar libros de
+                    caballerías en que leer, y así, llevó a su casa todos cuantos pudo haber dellos; y de todos,
+                    ningunos le parecían tan bien como los que compuso el famoso Feliciano de Silva; porque la claridad
+                    de su prosa y aquellas entricadas razones suyas le parecían de perlas, y más cuando llegaba a leer
+                    aquellos requiebros y cartas de desafíos, donde en muchas partes hallaba escrito: «La razón de la
+                    sinrazón que a mi razón se hace, de tal manera mi razón enflaquece, que con razón me quejo de la
+                    vuestra fermosura». Y también cuando leía: «... los altos cielos que de vuestra divinidad
+                    divinamente con las estrellas os fortifican, y os hacen merecedora del merecimiento que merece la
+                    vuestra grandeza».</p>
+            </section>
+
+            <section id="tabla">
+                <h2>Datos</h2>
+                <div>
+                    <table width="100%" cellpadding="10" width="100%" border>
+                        <thead>
+                            <tr>
+                                <th>Título</th>
+                                <th>Título</th>
+                                <th>Título</th>
+                                <th>Título</th>
+                                <th>Título</th>
+                                <th>Título</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>*</td>
+                                <td>*</td>
+                                <td>*</td>
+                                <td>*</td>
+                                <td>*</td>
+                                <td>*</td>
+                            </tr>
+                            <tr>
+                                <td>*</td>
+                                <td>*</td>
+                                <td>*</td>
+                                <td>*</td>
+                                <td>*</td>
+                                <td>*</td>
+                            </tr>
+                            <tr>
+                                <td>*</td>
+                                <td>*</td>
+                                <td>*</td>
+                                <td>*</td>
+                                <td>*</td>
+                                <td>*</td>
+                            </tr>
+                            <tr>
+                                <td>*</td>
+                                <td>*</td>
+                                <td>*</td>
+                                <td>*</td>
+                                <td>*</td>
+                                <td>*</td>
+                            </tr>
+                            <tr>
+                                <td>*</td>
+                                <td>*</td>
+                                <td>*</td>
+                                <td>*</td>
+                                <td>*</td>
+                                <td>*</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </section>
+
+            <section id="tao">
+                <h2>Tao Te Ching</h2>
+                <div>El Tao Te Ching es una obra temáticamente versátil, ya que cubre varias áreas de la convivencia
+                    humana. Su tono es, por lo general, escéptico. Lao Tse no proclama sus juicios como verdades
+                    irrefutables y desconfía del concepto de saber. Así, la mayoría de los capítulos del Tao Te Ching
+                    son vagos en cuanto a su significado y dejan abiertas diversas posibilidades de interpretación. Las
+                    alegorías suceden a aforismos ambiguos; en lugar de declaraciones claras, el lector recibe estímulos
+                    para reflexionar. Precisamente esta apertura a diferentes interpretaciones constituye el atractivo
+                    de la obra y ha provocado el entusiasmo de los lectores del Tao Te Ching de diversos círculos
+                    culturales, religiones y épocas. La única área temática en la que Lao Tse es claro y, en ocasiones,
+                    incluso apasionado, es la de la guerra y la violencia: no hay ni un asomo de escepticismo cuando
+                    condena el uso de las armas y pide a los gobernantes que utilicen la violencia y la guerra solo como
+                    último recurso. </div>
+                <p>
+                    No podemos ver lo eterno. Solo podemos vivir sin deseos y con moderación y, de esa manera, reconocer
+                    la maravilla del camino, que es un recipiente vacío del que siempre se puede sacar más y, por eso,
+                    es inagotable. Está oculto y, sin embargo, siempre está ahí como la imagen del origen del cielo. El
+                    principio de todo ser es invisible, inaudible e inconcebible, pero penetra todo. Aunque el camino es
+                    inimaginable, las personas lo han estado siguiendo desde el comienzo de los tiempos. Conocen su
+                    nombre y saben que causa el comienzo de todas las cosas. Los que siguen el camino se vuelven uno con
+                    él. A quien vive virtuosamente, la virtud lo acoge con amabilidad; quien pierde la virtud, se vuelve
+                    uno con la pérdida. Solo aquellos que confían en sí mismos confían también en otros.
+                </p>
+            </section>
+
+            <section id="lista">
+                <h2>Mi lista</h2>
+                <ol>
+                    <li>Esto es un elemento de lista</li>
+                    <li>Esto es un elemento de lista</li>
+                    <li>Esto es un elemento de lista</li>
+                    <li>Esto es un elemento de lista</li>
+                    <li>Esto es un elemento de lista</li>
+                    <li>Esto es un elemento de lista</li>
+                </ol>
+            </section>
+
+        </div>
+    </main>
+
+    <footer>
+        <div class="container"><img src="https://www.nationalgeographic.com.es/Content/img/ng-logo-white.svg" alt="">
+
+            <blockquote>Reservados todos los derechos habidos y por haber</blockquote>
+            <address>C/ del Pez, 23, 5ºB</address>
+        </div>
+    </footer>
+
+    <div id="botonsubir"><a href="#top">
+            <img src="https://cdn.icon-icons.com/icons2/1514/PNG/512/uploaduparrowsymbolincircularoutlinedbutton_105053.png"
+                width="60" alt="">
+        </a></div>
+
+</body>
+
+</html>
