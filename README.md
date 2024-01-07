@@ -3,7 +3,7 @@ Durante una de mis clases de lenguaje de marcas, generamos un documento HTML con
 ## HTML5 CSS3 básico
 No se trata de un ejemplo de uso extensivo de las (muchas) posibilidades de maquetación con HTML y CSS, si no una pequeña introducción, tal vez un recordatorio, de cómo me introduzco, en ocasiones, a generar la vista de una aplicación.
 # Flex y Grid
-Para los que llevamos mucho tiempo maquetando HTML, la llegada de flex y grid supuso un gran cambio en cuanto a la comodidad y rapidez en la maquetación, por eso, me gusta comenzar con la maquetación tal y como hacíamos antes y cómo se hace con flex o grid.
+Para los que llevamos mucho tiempo maquetando HTML, la llegada de flex y grid supuso un gran cambio en cuanto a la comodidad y rapidez en la maquetación, por eso, me gusta comenzar con la maquetación tal y como hacíamos antes y cómo se hace desde la llegada de CSS3.
 ```
     .miClase {
         display: flex;
