@@ -1,27 +1,28 @@
-# Kit de supervivencia HTML5 CSS3
-Durante una de mis clases de lenguaje de marcas, generamos un documento HTML con CSS con las opciones básicas para poder visualizar una página decentemente con HTML5 y CSS3.
-## HTML5 CSS3 básico
-No se trata de un ejemplo de uso extensivo de las (muchas) posibilidades de maquetación con HTML y CSS, si no una pequeña introducción, tal vez un recordatorio, de cómo me introduzco, en ocasiones, a generar la vista de una aplicación.
-# Flex y Grid
-Para los que llevamos mucho tiempo maquetando HTML, la llegada de flex y grid supuso un gran cambio en cuanto a la comodidad y rapidez en la maquetación, por eso, me gusta comenzar con la maquetación tal y como hacíamos antes y cómo se hace desde la llegada de CSS3.
+# HTML5 CSS3 Survival Kit
+During one of my markup language classes, we generated an HTML document with CSS with the basic options to display a page with HTML5 and CSS3 properly.
+## Basic HTML5 CSS3
+This is not an example of extensive use of the (many) layout possibilities with HTML and CSS, but a small introduction, perhaps a reminder, of how I sometimes introduce myself to generate the view of an application.
+# Flex and Grid
+For those of us who have been doing HTML layout for a long time, the arrival of flex and grid was a big change in terms of comfort and speed in the layout, so I like to start with the layout as we did before and how it is done since the arrival of CSS3.
 ```
-    .miClase {
+    .myClass {
         display: flex;
         flex-wrap: wrap;
     }
 ```
-Me gusta comenzar asignando flex a una clase y ver cómo se comportan los elementos de bloque anidados.
+I like to start by assigning flex to a class and see how nested block elements behave.
 ```
-    .miClase div {
+    .myClass div {
         width: 150px;
     }
 ```
-Con estas 2 sencillas sentencias crearemos una vista de bloques de 150px que, cuando no caben en el ancho de pantalla actual, pasan automáticamente a la línea siguiente (al estar flex-wrap: wrap, y en su modo por defecto -no-warp- todos los elementos de bloques serán mostrados en una única línea).
+With these 2 simple statements we will create a view of 150px blocks that, when they don't fit in the current screen width, will automatically pass to the next line (being flex-wrap: wrap, and in its default mode -no-warp- all block elements will be shown in a single line).
+
 
 # BasicHTML5.html
-Este documento tiene todo lo básico, tanto en lo referente a etiquetas semánticas HTML5 como las clases CSS3 (nótese cómo el significado de *aside* se visualiza gracias a estar incluido como elemento de bloque con tamaño dentro de un div con display:grid) 
+This document has all the basics, both in terms of HTML5 semantic tags and CSS3 classes (note how the meaning of *aside* is displayed thanks to being included as a sized block element inside a div with display:grid) 
 ## Responsive
-Nos introducimos en HTML5/CSS3 al mismo tiempo que en la creación de código HTML responsive, que se adapte a los dispositivos donde se visualiza gracias a las *media Querys* (nótese que, este ejemplo, se cambia una propiedad flex que hace que se inviertan la posición de las columnas)
+We are introduced to HTML5/CSS3 and at the same time to the creation of responsive HTML code, which adapts to the devices where it is displayed thanks to the *media Querys* (note that, in this example, we change a flex property that makes the position of the columns to be reversed)
 ```
 @media (max-width:1000px) {
     main {
@@ -29,9 +30,9 @@ Nos introducimos en HTML5/CSS3 al mismo tiempo que en la creación de código HT
     }
 }
 ```
-# Mi-primer-documento-css.html
-Por último, y para recopilar todo lo *básico* aprendido en lo relativo a `HTML5 & CSS3` generaremos el documento Mi-primer-documento-css.html en el que utilizaremos imágenes externas y fuentes de Google así como parámetros básicos para generar una vista de manera rápida. 
+# My-first-document-css.html
+Finally, and to compile all the *basics* learned about `HTML5 & CSS3` we will generate the document My-first-document-css.html in which we will use external images and Google fonts as well as basic parameters to generate a view in a quick way.
 
 ---
-`título:` Kit de Supervivencia HTML5-CSS3 \
-`autor:` David G. Bonacho &nbsp;&nbsp;  [www.tizedit.com](https://www.tizedit.com)
+`title:` HTML5 CSS3 Survival Kit \
+`author:` David G. Bonacho &nbsp;&nbsp;  [www.tizedit.com](https://www.tizedit.com)
