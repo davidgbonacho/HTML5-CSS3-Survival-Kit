@@ -22,7 +22,7 @@ With these 2 simple statements we will create a view of 150px blocks that, when 
 # BasicHTML5.html
 This document has all the basics, both in terms of HTML5 semantic tags and CSS3 classes (note how the meaning of *aside* is displayed thanks to being included as a sized block element inside a div with display:grid) 
 ## Responsive
-We are introduced to HTML5/CSS3 and at the same time to the creation of responsive HTML code, which adapts to the devices where it is displayed thanks to the *media Querys* (note that, in this example, we change a flex property that makes the position of the columns to be reversed)
+We are introduced to HTML5/CSS3 and at the same time to the creation of responsive HTML code, which adapts to the devices where it is displayed thanks to the *media Querys* (note that, in this example, we change a flex property that makes the position of the columns to be reversed).
 ```
 @media (max-width:1000px) {
     main {
